@@ -1,0 +1,45 @@
+//XMLHTTPRequest
+//Function
+//Function with parameter
+//function with return
+//anonymous function
+//IIFE(Immediately Invoked Function Expression)
+//arrow function
+
+//XMLHTTPRequest:-
+step1: To create a XHR object 
+XHR-XMLHTTPRequest
+syntax to create a xmlhttpRequest
+var variablename = new xmlhttpRequest();
+new- new is a keyword used to create a object
+ex:
+var request = new xmlhttpRequest();
+
+step2: Opening a connection to the server
+3 parameters are there to opening a connection to the server
+1. method(GET,POST,PUT,DELETE)
+2. url(From where to get the)
+3. true/false(optional)
+ex:
+request.open("GET","https://restcountries.com/v3.1/all")
+
+step3: Initiating a bridge to the server/sending a connection/sending a request
+request.send()
+---------completed requests---------
+
+step4:server response
+//onload: it is an event 
+//anonymous function: A function without name is called anonymous
+function (){
+
+}
+//response
+request.onload=function(){
+    var data=request.response
+    console.log(data); it will give the data in ununiform order
+    console.log(JSON.parse(data)); it will give the data in uniform order
+}
+
+
+
+

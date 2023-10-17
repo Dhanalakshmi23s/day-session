@@ -1,0 +1,101 @@
+-----object-------
+syntax:{
+    "key":"value"
+}
+example:
+var obj ={
+    name:"john",
+    age:"20"
+}
+console.log(obj)
+
+// for adding the particular key and vlue in the above code
+syntax: objectname.keyname = value
+example:
+obj.gender="male";
+
+// for printing the particular object key and value.
+syntax: objectname.keyname
+example:
+console.log(obj.name)
+
+// can we give an array in the object?...
+yes
+example:
+var obj={
+    name:"john",
+    age:20,
+    gender:"male",
+    attendance:["mon","tue","wed","thu"]    
+}
+
+// for printing the key in array
+var obj={
+    name:"john",
+    age:20,
+    gender:"male",
+    attendance:["mon","tue","wed","thu"]    
+}
+for (var i=0;i<obj.attendance.length;i++){
+    console.log(obj.attendance[i])
+}
+
+//JSON: javascript Object Notation.
+var obj={
+    "name":"john",
+    "age":"20",
+    "gender":"male",
+    
+}
+
+//Array of object
+var arr=[
+    {
+        "name":"joe",
+        "age":"20" 
+    }
+    {
+        "name":"ram",
+        "age":"23"
+    }
+    {
+        "name":"ram",
+        "age":"25"
+    }
+    {
+        "name":"dhanu",
+        "age":"20"
+    }
+]
+for (var i=0;i<arr.length;i++){
+    console.log(arr[i].name,"",arr[i].age)
+
+}
+
+//Hoisting... developer mistake...
+console.log(a);
+var a= 5;
+var b=6;
+console.log(b);
+//change this to 
+console.log(a);
+let a=5;
+
+//copy by value..
+it is applicable only to primitive data types.
+primitive data types: numbers, string and booleans.
+var a=23;
+var b=a;
+a=24;
+console.log(a);
+
+//copy by reference...
+it is applicable to complex / data types.
+var arr=[23,25,25,26];
+var arr1=arr;
+arr[0]=456;
+console.log(arr1[0]);
+
+
+
+
